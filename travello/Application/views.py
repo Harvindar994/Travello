@@ -6,13 +6,8 @@ from .models import Destination
 # Create your models here.
 
 def home(request):
-    destination = Destination()
-    destination.image = "destination_1.jpg"
-    destination.destination = "Mumbai"
-    destination.description = "City that never sleep."
-    destination.price = 76
-    destination.offer = True
-    return render(request, "index.html", {'destini': [destination, destination]})
+    dest = Destination.objects.all()
+    return render(request, "index.html", {'destini': dest})
 
 
 def about(request):
