@@ -1,0 +1,75 @@
+body{
+	background-color: #ccc;
+	text-align: center;
+}
+
+.containner{
+	background-color: #3B4754;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	border-radius: 4px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header{
+	line-height:10px;
+	padding: 10px;
+}
+
+.Form{
+	background-color: #757B81;
+	padding: 30px;
+	padding-top: 10px;
+}
+
+.FormElement{
+	margin-top: 20px;
+	display: flex;
+}
+
+.FormElement input{
+	flex: 2;
+	color: black;
+	background-color: #ccc;
+	border: 1px;
+	border-radius: 3px;
+	padding: 5px;
+	width: auto;
+}
+
+.Form label{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right:10px; 
+	margin-left: 10px;
+}
+
+.button{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button input{
+	color: white;
+	font-size: 15px;
+	background-color: #3C8DAD;
+}
+
+.button input:hover{
+	background-color: #125D98;
+}
+
+.Form a{
+	text-decoration: none;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.credit{
+    padding-bottom: 10px;
+}

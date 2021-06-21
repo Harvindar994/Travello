@@ -1,10 +1,49 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
 </head>
 <body>
-
+	<div class='containner'>
+		<div class="header">
+			<h2>Registration</h2>
+			<p>create new account</p>
+		</div>
+		<form class="Form" action="registration" method="post">
+			{% csrf_token %}
+			<div class="FormElement">
+				<label>Frist Name</label>
+				<input type="text" name="first_name">
+				<label>Frist Name</label>
+				<input type="text" name="last_name">
+			</div>
+			
+			<div class="FormElement">
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+			<div class="FormElement">
+				<label>Username</label>
+				<input type="text" name="username">
+			</div>
+			<div class="FormElement">
+				<label>Username</label>
+				<input type="password" name="password">
+				<label>Confirm Password</label>
+				<input type="password" name="confirmPassword">
+			</div>
+			<div class="FormElement button">
+				<input type="submit" name="Submit">
+			</div>
+			<div class="FormElement">
+				<a href="accounts/login">Do you an account? Login</a>
+			</div>
+		</form>
+		<p class="credit">Created By Harvindar Singh</p>
+	</div>
 </body>
 </html>
