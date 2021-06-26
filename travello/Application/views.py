@@ -1,21 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from models import Destination
+from .models import Destination
 
 # Create your views here.
 # Create your models here.
-class Destination:
-    image: str
-    destination: str
-    description: str
-    price: int
 
 def home(request):
     destination = Destination()
     destination.image = "destination_1.jpg"
     destination.destination = "Mumbai"
     destination.description = "City that never sleep."
-    destination.price = 765
+    destination.price = 76
+    destination.offer = True
     return render(request, "index.html", {'destini': [destination, destination]})
 
 
