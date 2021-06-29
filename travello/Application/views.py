@@ -5,9 +5,8 @@ from .models import Destination
 # Create your views here.
 # Create your models here.
 
-def home(request)
-    obj = Destination()
-    obj.save()
+def home(request):
+    print(Destination.objects.last())
     dest = Destination.objects.all()
     return render(request, "index.html", {'destini': dest})
 

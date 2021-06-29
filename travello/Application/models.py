@@ -8,3 +8,11 @@ class Destination(models.Model):
     description = models.TextField()
     price = models.IntegerField()
     offer = models.BooleanField(default=False)
+
+
+class Subscribe(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=254)
+    last_sended_post = models.IntegerField()
+
+
